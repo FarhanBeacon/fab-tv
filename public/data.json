@@ -2,7 +2,7 @@
   {
     "name": "Jamuna|tv",
     "image": "https://i.ibb.co/Ndsbsy2d/Jamuna.jpg",
-    "source": "https://www.youtube.com/embed/TQjRXrTmGKQ?si=KM103otBCfxPrHOD",
+    "source": "https://www.youtube.com/embed/QsNPUVz805A?si=jaQXK4ygqFT4tm2_",
     "navLink": "/jamuna"
   },
   {
@@ -26,7 +26,7 @@
   {
     "name": "Independent Television",
     "image": "https://i.ibb.co/Ps5BWwdW/independent.jpg",
-    "source": "https://www.youtube.com/embed/4T317DX6FK8?si=TKxK_zWKwH96oEJR",
+    "source": "https://www.youtube.com/embed/c1ITK8eITi8?si=uBJBNbh5nMbcE0nS",
     "navLink": "/independent"
   },
   {
@@ -44,7 +44,7 @@
   {
     "name": "Channel 24",
     "image": "https://i.ibb.co/yngwftpP/channel24.jpg",
-    "source": "https://www.youtube.com/embed/SHOjF8HvtSE?si=Z7RxazcK9c8Kv1zl",
+    "source": "https://www.youtube.com/embed/-yktKzEKotw?si=ZNJBnWSvft7C_-Ee",
     "navLink": "/channel24"
   },
   {
@@ -60,9 +60,27 @@
     "navLink": "/ntv"
   },
   {
+    "name": "Al Jazeera",
+    "image": "https://i.ibb.co.com/cc41MBDH/al-Jazeera.jpg",
+    "source": "https://www.youtube.com/embed/gCNeDWCI0vo?si=km610Yn5I7vfQ53S",
+    "navLink": "/alJazeera"
+  },
+  {
+    "name": "DW News",
+    "image": "https://i.ibb.co.com/hnsmfXV/dwNews.jpg",
+    "source": "https://www.youtube.com/embed/tZT2MCYu6Zw?si=-07XNqV0lUHHmqlL",
+    "navLink": "/dwNews"
+  },
+  {
+    "name": "ABC News",
+    "image": "https://i.ibb.co.com/kgfr1G9G/abcNews.jpg",
+    "source": "https://www.youtube.com/embed/-mvUkiILTqI?si=VbiZ4qzasJEi9BQp",
+    "navLink": "/abcNews"
+  },
+  {
     "name": "T Sports",
     "image": "https://i.ibb.co.com/46Zqgsy/tSports.jpg",
-    "source": "https://www.youtube.com/embed/p9kVT-PGjjk?si=JU7Uf4xQneJCu7hQ",
+    "source": "https://www.youtube.com/embed/1OhGwz8WBz0?si=vHOdvYL8a0GVPoXy",
     "navLink": "/tSports"
   },
   {
@@ -80,7 +98,7 @@
   {
     "name": "DESH TV LIVE",
     "image": "https://i.ibb.co.com/bDGGRLP/deshTv.jpg",
-    "source": "https://www.youtube.com/embed/DibdJ6Tu_tY?si=6jAgI-s2xRJ5Teh2",
+    "source": "https://www.youtube.com/embed/TNAz-m203U0?si=4dd7HVuDKkJfxOSY",
     "navLink": "/deshTv"
   },
   {
