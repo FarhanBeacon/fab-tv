@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import ChannelUI from "../ChannelUI/ChannelUI";
 import PropTypes from "prop-types";
-import { MdFullscreen, MdFullscreenExit } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -73,21 +72,15 @@ const TVUI = ({ otherChannel, chName, chUrl }) => {
           {showButton && (
             <button
               onClick={handleFullScreen}
-              className="absolute bottom-2 right-2 p-1 rounded-full transition-opacity duration-300 bg-black/60 text-white opacity-50 hover:opacity-100 hidden"
+              className="absolute bottom-2 right-2 p-1 rounded-full transition-opacity duration-300 bg-black/60 text-white opacity-50 hover:opacity-100"
               aria-label={isFullScreen ? "Exit fullscreen" : "Enter fullscreen"}
-            >
-              {isFullScreen ? (
-                <MdFullscreenExit size={30} />
-              ) : (
-                <MdFullscreen size={30} />
-              )}
-            </button>
+            ></button>
           )}
         </div>
 
         {/* Channel Name */}
         <div className="bg-black text-white border border-blue-300 p-2 text-center">
-          <h3 className="text-lg md:text-xl font-semibold">{chName}</h3>
+          <h3 className="text-xs md:text-xl font-semibold">{chName}</h3>
         </div>
       </div>
 
