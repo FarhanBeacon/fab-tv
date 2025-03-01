@@ -2,19 +2,19 @@
   {
     "name": "Jamuna|tv",
     "image": "https://i.ibb.co/mr9mLz9h/Jamuna.jpg",
-    "source": "https://www.youtube.com/embed/ob3j2oXscAY?si=cP5SXsn2rL4Kvde9",
+    "source": "https://www.youtube.com/embed/ajg1eyBbCv0?si=C-ncQsl2eSEna2E6",
     "navLink": "/jamuna"
   },
   {
     "name": "SOMOY TV",
     "image": "https://i.ibb.co/B2RR3cs2/somoy.jpg",
-    "source": "https://www.youtube.com/embed/GO3iFi7PQRA?si=WvrUb3v_8OqUTw9A",
+    "source": "https://www.youtube.com/embed/WRqBRITnPjg?si=wZZtATA0i1_2pVis",
     "navLink": "/somoy"
   },
   {
     "name": "EKHON TV",
     "image": "https://i.ibb.co/ZR14MXmD/ekhon.jpg",
-    "source": "https://www.youtube.com/embed/i-mWMkYmaxs?si=RudF0hpsuC3Kk8YN",
+    "source": "https://www.youtube.com/embed/i-mWMkYmaxs?si=NBfR3YVFB_rN8gA3",
     "navLink": "/ekhon"
   },
   {
@@ -26,25 +26,31 @@
   {
     "name": "Independent Television",
     "image": "https://i.ibb.co/qYtDPGzj/independent.jpg",
-    "source": "https://www.youtube.com/embed/c1ITK8eITi8?si=uBJBNbh5nMbcE0nS",
+    "source": "https://www.youtube.com/embed/c1ITK8eITi8?si=wYKTfa1PLsdY_3LB",
     "navLink": "/independent"
   },
   {
     "name": "ATN News TV",
     "image": "https://i.ibb.co/dsmzBFKR/atn.jpg",
-    "source": "https://www.youtube.com/embed/CiHtkwc-jVI?si=JjGgBqeypNAmi6TA",
+    "source": "https://www.youtube.com/embed/updF6vJQ5B4?si=9NRT1umlOn1nmNMS",
     "navLink": "/atn"
   },
   {
     "name": "Channel i News",
     "image": "https://i.ibb.co/gF314zLM/channeli.jpg",
-    "source": "https://www.youtube.com/embed/3Us91R-gGx8?si=WtUSKXV4DDBZLJvU",
+    "source": "https://www.youtube.com/embed/3Us91R-gGx8?si=ryLgi1mZvLgfKD_d",
     "navLink": "/channeli"
+  },
+  {
+    "name": "DESH TV LIVE",
+    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
+    "source": "https://www.youtube.com/embed/TNAz-m203U0?si=4dd7HVuDKkJfxOSY",
+    "navLink": "/deshTv"
   },
   {
     "name": "Channel 24",
     "image": "https://i.ibb.co/JRZQ70QW/channel24.jpg",
-    "source": "https://www.youtube.com/embed/-yktKzEKotw?si=ZNJBnWSvft7C_-Ee",
+    "source": "https://www.youtube.com/embed/wVWuhv4dd48?si=YmWnZnst7BOyoLWV",
     "navLink": "/channel24"
   },
   {
@@ -54,10 +60,22 @@
     "navLink": "/ekattor"
   },
   {
+    "name": "DBC NEWS",
+    "image": "https://i.ibb.co/4wcGZSY4/dbcNews.jpg",
+    "source": "https://www.youtube.com/embed/6i5RTd05Cr4?si=vDFGoKB0EaggjnBB",
+    "navLink": "/dbcNews"
+  },
+  {
     "name": "NTV Live",
     "image": "https://i.ibb.co/QFn37nQk/ntv.jpg",
     "source": "https://www.youtube.com/embed/tc_zoT0hRfM?si=fqYXxR2u6_CLUoYb",
     "navLink": "/ntv"
+  },
+  {
+    "name": "News24 Television",
+    "image": "https://i.ibb.co/Z1b9m1np/news24.jpg",
+    "source": "https://www.youtube.com/embed/SXXsaIApIzk?si=zwyUBbtqhrxh4v4_",
+    "navLink": "/news24"
   },
   {
     "name": "Al Jazeera",
@@ -96,22 +114,16 @@
     "navLink": "/discoveryRex"
   },
   {
-    "name": "DESH TV LIVE",
-    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
-    "source": "https://www.youtube.com/embed/TNAz-m203U0?si=4dd7HVuDKkJfxOSY",
-    "navLink": "/deshTv"
+    "name": "Disney XD",
+    "image": "https://i.ibb.co.com/1tN65R5q/xD.jpg",
+    "source": "https://www.youtube.com/embed/Jo_R1pHp24E?si=ywV5xGF7iqRmtj5h",
+    "navLink": "/disneyXD"
   },
   {
-    "name": "News24 Television",
-    "image": "https://i.ibb.co/Z1b9m1np/news24.jpg",
-    "source": "https://www.youtube.com/embed/SXXsaIApIzk?si=zwyUBbtqhrxh4v4_",
-    "navLink": "/news24"
-  },
-  {
-    "name": "DBC NEWS",
-    "image": "https://i.ibb.co/4wcGZSY4/dbcNews.jpg",
-    "source": "https://www.youtube.com/embed/6i5RTd05Cr4?si=vDFGoKB0EaggjnBB",
-    "navLink": "/dbcNews"
+    "name": "Cartoon Network",
+    "image": "https://i.ibb.co.com/4nCBDJQB/cN.jpg",
+    "source": "https://www.youtube.com/embed/sGQYPNeOAKQ?si=eR_CC9UtYttvmAlW",
+    "navLink": "/cN"
   },
   {
     "name": "Power Rangers Official",

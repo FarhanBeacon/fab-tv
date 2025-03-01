@@ -15,7 +15,7 @@ const HomePage = () => {
           <h4 className="text-5xl font-semibold text-center">Fab TV</h4>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {data.map((channel, index) => (
           <ChannelUI
             key={index}

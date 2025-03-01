@@ -87,7 +87,7 @@ const TVUI = ({ otherChannel, chName, chUrl }) => {
       {/* Other Channels Section */}
       <div className="relative my-2 md:my-4 p-2 md:p-4">
         <h3 className="text-lg md:text-xl font-semibold">Other Channels</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
           {otherChannel.map((channel, index) => (
             <ChannelUI
               key={index}

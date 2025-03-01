@@ -24,6 +24,8 @@ import PowerOfficial from "./components/PowerOfficial/PowerOfficial.jsx";
 import AlJazeera from "./components/AlJazeera/AlJazeera.jsx";
 import DWNews from "./components/DWNews/DWNews.jsx";
 import ABCNews from "./components/ABCNews/ABCNews.jsx";
+import DisneyXD from "./components/DisneyXD/DisneyXD.jsx";
+import CN from "./components/CN/CN.jsx";
 
 const router = createBrowserRouter([
   {
@@ -110,6 +112,14 @@ const router = createBrowserRouter([
       {
         path: "/dbcNews",
         element: <DbcNews />,
+      },
+      {
+        path: "/disneyXD",
+        element: <DisneyXD />,
+      },
+      {
+        path: "/cN",
+        element: <CN />,
       },
       {
         path: "/powerOfficial",
