@@ -28,6 +28,8 @@ import DisneyXD from "./components/DisneyXD/DisneyXD.jsx";
 import CN from "./components/CN/CN.jsx";
 import France24 from "./components/France24/France24.jsx";
 import Wion from "./components/Wion/Wion.jsx";
+import Cgtn from "./components/Cgtn/Cgtn.jsx";
+import ChannelsTv from "./components/ChannelsTv/ChannelsTv.jsx";
 
 const router = createBrowserRouter([
   {
@@ -96,8 +98,16 @@ const router = createBrowserRouter([
         element: <DWNews />,
       },
       {
+        path: "/cgtn",
+        element: <Cgtn />,
+      },
+      {
         path: "/abcNews",
         element: <ABCNews />,
+      },
+      {
+        path: "/channelsTv",
+        element: <ChannelsTv />,
       },
       {
         path: "/tSports",

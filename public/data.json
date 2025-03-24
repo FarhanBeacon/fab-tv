@@ -18,10 +18,10 @@
     "navLink": "/dbcNews"
   },
   {
-    "name": "SOMOY TV",
-    "image": "https://i.ibb.co/B2RR3cs2/somoy.jpg",
-    "source": "https://www.youtube.com/embed/t69zB0wIdB0?si=sMHq6o8Gxxtf-jBL",
-    "navLink": "/somoy"
+    "name": "Ekattor",
+    "image": "https://i.ibb.co/21kYrsSJ/ekattor.jpg",
+    "source": "https://www.youtube.com/embed/zXubHKficK8?si=LmSuA4gLRZGzoie0",
+    "navLink": "/ekattor"
   },
   {
     "name": "Channel i News",
@@ -36,10 +36,10 @@
     "navLink": "/news24"
   },
   {
-    "name": "Ekattor",
-    "image": "https://i.ibb.co/21kYrsSJ/ekattor.jpg",
-    "source": "https://www.youtube.com/embed/zXubHKficK8?si=LmSuA4gLRZGzoie0",
-    "navLink": "/ekattor"
+    "name": "SOMOY TV",
+    "image": "https://i.ibb.co/B2RR3cs2/somoy.jpg",
+    "source": "https://www.youtube.com/embed/t69zB0wIdB0?si=sMHq6o8Gxxtf-jBL",
+    "navLink": "/somoy"
   },
   {
     "name": "Rtv News",
@@ -48,10 +48,10 @@
     "navLink": "/rtv"
   },
   {
-    "name": "Jamuna|tv",
-    "image": "https://i.ibb.co/mr9mLz9h/Jamuna.jpg",
-    "source": "https://www.youtube.com/embed/gZU5dz0nXwE?si=KcewcM5A72MVX4-r",
-    "navLink": "/jamuna"
+    "name": "FRANCE 24 English",
+    "image": "https://i.ibb.co.com/cqDhssT/france24.jpg",
+    "source": "https://www.youtube.com/embed/Ap-UM1O9RBU?si=m0QOBDcRvRyeYv5U",
+    "navLink": "/france24"
   },
   {
     "name": "NTV Live",
@@ -60,16 +60,16 @@
     "navLink": "/ntv"
   },
   {
-    "name": "DESH TV LIVE",
-    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
-    "source": "https://www.youtube.com/embed/5UH1x3vKsQQ?si=guGgN6jSfyP0wLk-",
-    "navLink": "/deshTv"
+    "name": "Al Jazeera",
+    "image": "https://i.ibb.co/RGHnkhMM/al-Jazeera.jpg",
+    "source": "https://www.youtube.com/embed/gCNeDWCI0vo?si=Ipn75NEDj2d7HC0F",
+    "navLink": "/alJazeera"
   },
   {
-    "name": "FRANCE 24 English",
-    "image": "https://i.ibb.co.com/cqDhssT/france24.jpg",
-    "source": "https://www.youtube.com/embed/Ap-UM1O9RBU?si=m0QOBDcRvRyeYv5U",
-    "navLink": "/france24"
+    "name": "Jamuna|tv",
+    "image": "https://i.ibb.co/mr9mLz9h/Jamuna.jpg",
+    "source": "https://www.youtube.com/embed/gZU5dz0nXwE?si=KcewcM5A72MVX4-r",
+    "navLink": "/jamuna"
   },
   {
     "name": "WION",
@@ -78,16 +78,16 @@
     "navLink": "/wion"
   },
   {
+    "name": "DESH TV LIVE",
+    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
+    "source": "https://www.youtube.com/embed/5UH1x3vKsQQ?si=guGgN6jSfyP0wLk-",
+    "navLink": "/deshTv"
+  },
+  {
     "name": "DW News",
     "image": "https://i.ibb.co/bjRBdqwD/dwNews.jpg",
     "source": "https://www.youtube.com/embed/tZT2MCYu6Zw?si=iiCt81ESM33ng60r",
     "navLink": "/dwNews"
-  },
-  {
-    "name": "Al Jazeera",
-    "image": "https://i.ibb.co/RGHnkhMM/al-Jazeera.jpg",
-    "source": "https://www.youtube.com/embed/gCNeDWCI0vo?si=Ipn75NEDj2d7HC0F",
-    "navLink": "/alJazeera"
   },
   {
     "name": "ATN News TV",
@@ -102,10 +102,22 @@
     "navLink": "/channel24"
   },
   {
+    "name": "CGTN Europe",
+    "image": "https://i.ibb.co.com/NGMZWcx/cgtn.jpg",
+    "source": "https://www.youtube.com/embed/pd3CgRzcQdA?si=SdFLrR3ukzL4GHtX",
+    "navLink": "/cgtn"
+  },
+  {
     "name": "ABC News",
     "image": "https://i.ibb.co/zWrV6LHP/abcNews.jpg",
     "source": "https://www.youtube.com/embed/-mvUkiILTqI?si=JeElbqWKB7ruCSlw",
     "navLink": "/abcNews"
+  },
+  {
+    "name": "Channels Television",
+    "image": "https://i.ibb.co.com/v6QcDBNb/channels-Tv.jpg",
+    "source": "https://www.youtube.com/embed/dfB0qmJo1eM?si=mFNyta8nWCt5220k",
+    "navLink": "/channelsTv"
   },
   {
     "name": "T Sports",
