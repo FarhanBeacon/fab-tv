@@ -26,6 +26,8 @@ import DWNews from "./components/DWNews/DWNews.jsx";
 import ABCNews from "./components/ABCNews/ABCNews.jsx";
 import DisneyXD from "./components/DisneyXD/DisneyXD.jsx";
 import CN from "./components/CN/CN.jsx";
+import France24 from "./components/France24/France24.jsx";
+import Wion from "./components/Wion/Wion.jsx";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +82,14 @@ const router = createBrowserRouter([
       {
         path: "/alJazeera",
         element: <AlJazeera />,
+      },
+      {
+        path: "/france24",
+        element: <France24 />,
+      },
+      {
+        path: "/wion",
+        element: <Wion />,
       },
       {
         path: "/dwNews",

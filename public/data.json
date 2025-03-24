@@ -66,6 +66,30 @@
     "navLink": "/deshTv"
   },
   {
+    "name": "FRANCE 24 English",
+    "image": "https://i.ibb.co.com/cqDhssT/france24.jpg",
+    "source": "https://www.youtube.com/embed/Ap-UM1O9RBU?si=m0QOBDcRvRyeYv5U",
+    "navLink": "/france24"
+  },
+  {
+    "name": "WION",
+    "image": "https://i.ibb.co.com/TBGjpfQZ/wion.jpg",
+    "source": "https://www.youtube.com/embed/gadjsB5BkK4?si=9wdxFQkGux_U1WV0",
+    "navLink": "/wion"
+  },
+  {
+    "name": "DW News",
+    "image": "https://i.ibb.co/bjRBdqwD/dwNews.jpg",
+    "source": "https://www.youtube.com/embed/tZT2MCYu6Zw?si=iiCt81ESM33ng60r",
+    "navLink": "/dwNews"
+  },
+  {
+    "name": "Al Jazeera",
+    "image": "https://i.ibb.co/RGHnkhMM/al-Jazeera.jpg",
+    "source": "https://www.youtube.com/embed/gCNeDWCI0vo?si=Ipn75NEDj2d7HC0F",
+    "navLink": "/alJazeera"
+  },
+  {
     "name": "ATN News TV",
     "image": "https://i.ibb.co/dsmzBFKR/atn.jpg",
     "source": "https://www.youtube.com/embed/ztKFBUWCjQo?si=gCzc16aSq2jPszXI",
@@ -76,18 +100,6 @@
     "image": "https://i.ibb.co/JRZQ70QW/channel24.jpg",
     "source": "https://www.youtube.com/embed/fTKGs-pXz7Y?si=X9LNoZSD8tWPZaTI",
     "navLink": "/channel24"
-  },
-  {
-    "name": "Al Jazeera",
-    "image": "https://i.ibb.co/RGHnkhMM/al-Jazeera.jpg",
-    "source": "https://www.youtube.com/embed/gCNeDWCI0vo?si=Ipn75NEDj2d7HC0F",
-    "navLink": "/alJazeera"
-  },
-  {
-    "name": "DW News",
-    "image": "https://i.ibb.co/bjRBdqwD/dwNews.jpg",
-    "source": "https://www.youtube.com/embed/tZT2MCYu6Zw?si=iiCt81ESM33ng60r",
-    "navLink": "/dwNews"
   },
   {
     "name": "ABC News",
