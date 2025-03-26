@@ -54,16 +54,16 @@
     "navLink": "/france24"
   },
   {
-    "name": "DESH TV LIVE",
-    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
-    "source": "https://www.youtube.com/embed/3S-jgJtJsHE?si=0zVcA6gj0V2OwYo8",
-    "navLink": "/deshTv"
-  },
-  {
     "name": "NTV Live",
     "image": "https://i.ibb.co/QFn37nQk/ntv.jpg",
     "source": "https://www.youtube.com/embed/dQ4ePxkp5k0?si=W0ww_i2KXjJXDBrO",
     "navLink": "/ntv"
+  },
+  {
+    "name": "DESH TV LIVE",
+    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
+    "source": "https://www.youtube.com/embed/3S-jgJtJsHE?si=0zVcA6gj0V2OwYo8",
+    "navLink": "/deshTv"
   },
   {
     "name": "Al Jazeera",
