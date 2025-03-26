@@ -2,7 +2,7 @@
   {
     "name": "Independent Television",
     "image": "https://i.ibb.co/qYtDPGzj/independent.jpg",
-    "source": "https://www.youtube.com/embed/amuxfC3A4h4?si=77Px6rOnxOTPvdji",
+    "source": "https://www.youtube.com/embed/RwnSDb_yN7g?si=8cE5psGwrfVg6Tcu",
     "navLink": "/independent"
   },
   {
@@ -14,7 +14,7 @@
   {
     "name": "DBC NEWS",
     "image": "https://i.ibb.co/4wcGZSY4/dbcNews.jpg",
-    "source": "https://www.youtube.com/embed/6i5RTd05Cr4?si=fG4c7yzdrPd-_EV1",
+    "source": "https://www.youtube.com/embed/HsGPvucZEyE?si=zUnHW2xlfaccyQYm",
     "navLink": "/dbcNews"
   },
   {
@@ -54,6 +54,12 @@
     "navLink": "/france24"
   },
   {
+    "name": "DESH TV LIVE",
+    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
+    "source": "https://www.youtube.com/embed/3S-jgJtJsHE?si=0zVcA6gj0V2OwYo8",
+    "navLink": "/deshTv"
+  },
+  {
     "name": "NTV Live",
     "image": "https://i.ibb.co/QFn37nQk/ntv.jpg",
     "source": "https://www.youtube.com/embed/dQ4ePxkp5k0?si=W0ww_i2KXjJXDBrO",
@@ -68,7 +74,7 @@
   {
     "name": "Jamuna|tv",
     "image": "https://i.ibb.co/mr9mLz9h/Jamuna.jpg",
-    "source": "https://www.youtube.com/embed/gZU5dz0nXwE?si=KcewcM5A72MVX4-r",
+    "source": "https://www.youtube.com/embed/Ui7Zdem4SJs?si=qNpH8Q-4y4ynVPGt",
     "navLink": "/jamuna"
   },
   {
@@ -76,12 +82,6 @@
     "image": "https://i.ibb.co.com/TBGjpfQZ/wion.jpg",
     "source": "https://www.youtube.com/embed/gadjsB5BkK4?si=9wdxFQkGux_U1WV0",
     "navLink": "/wion"
-  },
-  {
-    "name": "DESH TV LIVE",
-    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
-    "source": "https://www.youtube.com/embed/5UH1x3vKsQQ?si=guGgN6jSfyP0wLk-",
-    "navLink": "/deshTv"
   },
   {
     "name": "DW News",
