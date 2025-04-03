@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { VitePWA } from "vite-plugin-pwa";
+import { VitePWA } from "vite-plugin-pwa"; // For Windows App Icon We Install And Import VitePWA & The command Is "npm install vite-plugin-pwa --save-dev" After That We Added this as Plugin....
 import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
