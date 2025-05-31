@@ -30,11 +30,8 @@ const Login = () => {
       <Banner />
       <div className="hero bg-base-200 min-h-screen items-start md:items-center">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
-            <Lottie
-              animationData={LoginLottie}
-              loop={true}
-            />
+          <div>
+            <Lottie animationData={LoginLottie} loop={true} />
           </div>
           <div className="card bg-base-100 w-full max-w-sm shrink-0 drop-shadow-[0_0_2px_rgba(0,0,0,0.25)]">
             <div className="card-body">
@@ -61,12 +58,12 @@ const Login = () => {
                     {showPass ? (
                       <FaEyeSlash
                         onClick={() => setShowPass(false)}
-                        className="absolute z-10 text-lg right-4 md:right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
                       />
                     ) : (
                       <FaEye
                         onClick={() => setShowPass(true)}
-                        className="absolute z-10 text-lg right-4 md:right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
                       />
                     )}
                   </>

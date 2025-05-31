@@ -31,10 +31,10 @@ const Register = () => {
       <Banner />
       <div className="hero bg-base-200 min-h-screen items-start md:items-center">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
+          <div>
             <Lottie
               animationData={registerLottie}
-              style={{ height: 400, width: 400 }}
+              className="md:w-[400px]"
             />
           </div>
           <div className="card bg-base-100 w-full max-w-sm shrink-0 drop-shadow-[0_0_2px_rgba(0,0,0,0.25)]">
@@ -69,12 +69,12 @@ const Register = () => {
                     {showPass ? (
                       <FaEyeSlash
                         onClick={() => setShowPass(false)}
-                        className="absolute z-10 text-lg right-4 md:right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
                       />
                     ) : (
                       <FaEye
                         onClick={() => setShowPass(true)}
-                        className="absolute z-10 text-lg right-4 md:right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
                       />
                     )}
                   </>

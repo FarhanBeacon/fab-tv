@@ -11,15 +11,16 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())
-      .then((info) => {
-        setChannelsData(info);
+      .then((data) => {
+        setChannelsData(data);
         setLoading(false);
       });
   }, []);
 
   const info = {
     channelsData,
-    loading
+    loading,
+    setLoading,
   };
   return <AuthContext.Provider value={info}>{children}</AuthContext.Provider>;
 };
