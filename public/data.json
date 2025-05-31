@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Independent Television",
+    "image": "https://i.ibb.co/qYtDPGzj/independent.jpg",
+    "source": "https://www.youtube.com/embed/QnBJbbeE_TM?si=8gJgBrdwwkF9MUVa",
+    "navLink": "/independent"
+  },
+  {
+    "name": "EKHON TV",
+    "image": "https://i.ibb.co/ZR14MXmD/ekhon.jpg",
+    "source": "https://www.youtube.com/embed/CAOaoRtQm_I?si=Hb5mdIQYadZO_gCO",
+    "navLink": "/ekhon"
+  },
+  {
+    "name": "DBC NEWS",
+    "image": "https://i.ibb.co/4wcGZSY4/dbcNews.jpg",
+    "source": "https://www.youtube.com/embed/GnfLrE0ketY?si=zmMy0bnp1JygLsMp",
+    "navLink": "/dbcNews"
+  },
+  {
+    "name": "Ekattor",
+    "image": "https://i.ibb.co/21kYrsSJ/ekattor.jpg",
+    "source": "https://www.youtube.com/embed/TtIBWC_DN8Q?si=Y57SBVJC67VtZzp4",
+    "navLink": "/ekattor"
+  },
+  {
+    "name": "Channel i News",
+    "image": "https://i.ibb.co/gF314zLM/channeli.jpg",
+    "source": "https://www.youtube.com/embed/ysTkuNrgiWY?si=1BvfgZHvF4miB64Y",
+    "navLink": "/channeli"
+  },
+  {
+    "name": "News24 Television",
+    "image": "https://i.ibb.co/Z1b9m1np/news24.jpg",
+    "source": "https://www.youtube.com/embed/XtYRatCkUdg?si=aumw2SY04UIldHCN",
+    "navLink": "/news24"
+  },
+  {
+    "name": "SOMOY TV",
+    "image": "https://i.ibb.co/B2RR3cs2/somoy.jpg",
+    "source": "https://www.youtube.com/embed/7Zi61WO4eDg?si=_f_BUkf5VArGhMMs",
+    "navLink": "/somoy"
+  },
+  {
+    "name": "Rtv News",
+    "image": "https://i.ibb.co/FkPd5TjF/rtv.jpg",
+    "source": "https://www.youtube.com/embed/fTT3Wzey9hs?si=6v8K1W-lOJI0DOMQ",
+    "navLink": "/rtv"
+  },
+  {
+    "name": "FRANCE 24 English",
+    "image": "https://i.ibb.co.com/cqDhssT/france24.jpg",
+    "source": "https://www.youtube.com/embed/Ap-UM1O9RBU?si=m0QOBDcRvRyeYv5U",
+    "navLink": "/france24"
+  },
+  {
+    "name": "NTV Live",
+    "image": "https://i.ibb.co/QFn37nQk/ntv.jpg",
+    "source": "https://www.youtube.com/embed/Eqg2eJorQvk?si=-QEWBDQ-v31-1jX9",
+    "navLink": "/ntv"
+  },
+  {
+    "name": "DESH TV LIVE",
+    "image": "https://i.ibb.co/tMbRPCft/deshTv.jpg",
+    "source": "https://www.youtube.com/embed/FY9fcPiYSgM?si=NKU_bsZOwl9rdg8O",
+    "navLink": "/deshTv"
+  },
+  {
+    "name": "Al Jazeera",
+    "image": "https://i.ibb.co/RGHnkhMM/al-Jazeera.jpg",
+    "source": "https://www.youtube.com/embed/gCNeDWCI0vo?si=Ipn75NEDj2d7HC0F",
+    "navLink": "/alJazeera"
+  },
+  {
+    "name": "Jamuna|tv",
+    "image": "https://i.ibb.co/mr9mLz9h/Jamuna.jpg",
+    "source": "https://www.youtube.com/embed/jbKYopompz0?si=vPGKjmmHifpBl4JJ",
+    "navLink": "/jamuna"
+  },
+  {
+    "name": "WION",
+    "image": "https://i.ibb.co.com/TBGjpfQZ/wion.jpg",
+    "source": "https://www.youtube.com/embed/gadjsB5BkK4?si=9wdxFQkGux_U1WV0",
+    "navLink": "/wion"
+  },
+  {
+    "name": "DW News",
+    "image": "https://i.ibb.co/bjRBdqwD/dwNews.jpg",
+    "source": "https://www.youtube.com/embed/LuKwFajn37U?si=2f5K3vbDPGV0TMk1",
+    "navLink": "/dwNews"
+  },
+  {
+    "name": "ATN News TV",
+    "image": "https://i.ibb.co/dsmzBFKR/atn.jpg",
+    "source": "https://www.youtube.com/embed/4fK_2PofHqc?si=a_q5GXg7B3HjS032",
+    "navLink": "/atn"
+  },
+  {
+    "name": "Channel 24",
+    "image": "https://i.ibb.co/JRZQ70QW/channel24.jpg",
+    "source": "https://www.youtube.com/embed/R1blSGTRV-s?si=0jiqSFjEAxBxJWpG",
+    "navLink": "/channel24"
+  },
+  {
+    "name": "CGTN Europe",
+    "image": "https://i.ibb.co.com/NGMZWcx/cgtn.jpg",
+    "source": "https://www.youtube.com/embed/_6dRRfnYJws?si=VahxO_4pT_hMXwyD",
+    "navLink": "/cgtn"
+  },
+  {
+    "name": "ABC News",
+    "image": "https://i.ibb.co/zWrV6LHP/abcNews.jpg",
+    "source": "https://www.youtube.com/embed/iipR5yUp36o?si=FAn3Xup8SNojpAZn",
+    "navLink": "/abcNews"
+  },
+  {
+    "name": "Channels Television",
+    "image": "https://i.ibb.co.com/v6QcDBNb/channels-Tv.jpg",
+    "source": "https://www.youtube.com/embed/dfB0qmJo1eM?si=mFNyta8nWCt5220k",
+    "navLink": "/channelsTv"
+  },
+  {
+    "name": "Nat Geo Animals",
+    "image": "https://i.ibb.co/wXRnR8R/netGeo.jpg",
+    "source": "https://www.youtube.com/embed/r0jpy2xfgq8?si=YoBfPr3uVAOpCwb_",
+    "navLink": "/natGeo"
+  },
+  {
+    "name": "Discovery Relaxation",
+    "image": "https://i.ibb.co/8gb8sTXH/discovery-Rex.jpg",
+    "source": "https://www.youtube.com/embed/6iQCt1X8jZU?si=C9ZVTstShemhPym7",
+    "navLink": "/discoveryRex"
+  },
+  {
+    "name": "Disney XD",
+    "image": "https://i.ibb.co.com/1tN65R5q/xD.jpg",
+    "source": "https://www.youtube.com/embed/c2gOZMK6qXc?si=VXe2X9cHpHFBxu0F",
+    "navLink": "/disneyXD"
+  },
+  {
+    "name": "Cartoon Network",
+    "image": "https://i.ibb.co.com/4nCBDJQB/cN.jpg",
+    "source": "https://www.youtube.com/embed/IJbbpAhjboI?si=M6WjodQ7uMFYL3qZ",
+    "navLink": "/cN"
+  }
+]
