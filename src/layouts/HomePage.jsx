@@ -15,7 +15,7 @@ const HomePage = () => {
             <h3 className="text-3xl font-semibold">
               Hello!{" "}
               <span className="text-blue-400">
-                {user.displayName.split(" ")[0]}
+                {user.displayName?.split(" ")[0]}
               </span>
             </h3>
             <p className="text-gray-600">Welcome To Fab TV</p>
