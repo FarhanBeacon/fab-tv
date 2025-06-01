@@ -2,21 +2,31 @@ import React, { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import Banner from "../components/Banner";
 import ChannelUI from "../components/ChannelUI";
-import { Link } from "react-router";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
-  const { channelsData } = useContext(AuthContext);
+  const { channelsData, user } = useContext(AuthContext);
   return (
     <div>
       <Banner />
-      <nav className="navbar w-fit mx-auto flex justify-center items-center gap-3 p-2 bg-base-200 rounded drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] m-2">
-        <Link to={"/login"} className="btn shadow-none border-2 border-blue-400">
-          Login
-        </Link>
-        <Link to={"/register"} className="btn shadow-none border-2 border-black">
-          Register
-        </Link>
-      </nav>
+      {user ? (
+        <div className="w-full flex justify-between items-center px-4">
+          <div>
+            <h3 className="text-3xl font-semibold">
+              Hello!{" "}
+              <span className="text-blue-400">
+                {user.displayName.split(" ")[0]}
+              </span>
+            </h3>
+            <p className="text-gray-600">Welcome To Fab TV</p>
+          </div>
+          <Navbar />
+        </div>
+      ) : (
+        <div className="w-fit mx-auto">
+          <Navbar />
+        </div>
+      )}
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {channelsData.map((channel, index) => (
           <ChannelUI

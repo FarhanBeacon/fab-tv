@@ -1,22 +1,31 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Lottie from "lottie-react";
 import registerLottie from "../assets/lotties/register.json";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { AuthContext } from "../provider/AuthProvider";
+import swal from "sweetalert";
 
 const Register = () => {
   const [error, setError] = useState("");
   const [showPass, setShowPass] = useState(false);
+  const {
+    createUserWithEmailPass,
+    setLoading,
+    updateUserInfo,
+    verifyEmail,
+    logOutUser,
+  } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
     const form = e.target;
-    // const username = form.username.value;
-    // const email = form.email.value;
+    const username = form.username.value;
+    const email = form.email.value;
     const password = form.password.value;
-    // const user = { username, email, password };
 
     setError("");
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
@@ -25,6 +34,25 @@ const Register = () => {
         "Password must be at least 8 characters long and  one uppercase letter and one digit (number)",
       ]);
     }
+
+    createUserWithEmailPass(email, password)
+      .then(() => {
+        updateUserInfo(username);
+        verifyEmail();
+        logOutUser();
+        swal(
+          "Good job!",
+          "User Created Successfully! Verify Your Email to Login",
+          "success"
+        );
+        navigate("/login");
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
   return (
     <div>
@@ -32,10 +60,7 @@ const Register = () => {
       <div className="hero bg-base-200 min-h-screen items-start md:items-center">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
           <div>
-            <Lottie
-              animationData={registerLottie}
-              className="md:w-[400px]"
-            />
+            <Lottie animationData={registerLottie} className="md:w-[400px]" />
           </div>
           <div className="card bg-base-100 w-full max-w-sm shrink-0 drop-shadow-[0_0_2px_rgba(0,0,0,0.25)]">
             <div className="card-body">

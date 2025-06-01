@@ -5,9 +5,9 @@ import { useContext } from "react";
 import Loader from "./components/Loader";
 
 function App() {
-    const { loading } = useContext(AuthContext);
-    if (loading) {
-    return (<Loader />);
+  const { loading } = useContext(AuthContext);
+  if (loading) {
+    return <Loader />;
   }
   return (
     <>

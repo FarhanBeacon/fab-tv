@@ -1,29 +1,64 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import LoginLottie from "../assets/lotties/login.json";
 import Lottie from "lottie-react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { AuthContext } from "../provider/AuthProvider";
+import swal from "sweetalert";
 
 const Login = () => {
   const [error, setError] = useState("");
   const [showPass, setShowPass] = useState(false);
+  const {
+    createGoogleUser,
+    loginWithEmailPass,
+    setUser,
+    setLoading,
+    logOutUser,
+  } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSignIn = (e) => {
     e.preventDefault();
     const form = e.target;
-    // const email = form.email.value;
+    const email = form.email.value;
     const password = form.password.value;
-    // const user = { email, password };
-
     setError("");
-    const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
-    if (!passwordRegex.test(password)) {
-      setError([
-        "Password must be at least 8 characters long and  one uppercase letter and one digit (number)",
-      ]);
-    }
+
+    loginWithEmailPass(email, password)
+      .then((result) => {
+        const user = result.user;
+        if (user.emailVerified) {
+          setUser(user);
+          navigate("/");
+        } else {
+          logOutUser();
+          swal("Error", "Email is not verified Yet", "warning");
+        }
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  const handleGoogleSignin = () => {
+    createGoogleUser()
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        navigate("/");
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
   return (
     <div>
@@ -37,7 +72,7 @@ const Login = () => {
             <div className="card-body">
               <form onSubmit={handleSignIn} className="fieldset">
                 <h1 className="text-4xl font-semibold text-center mb-2">
-                  Sign in!
+                  !!!Login!!!
                 </h1>
                 <label className="label">Email</label>
                 <input
@@ -45,6 +80,7 @@ const Login = () => {
                   name="email"
                   className="input"
                   placeholder="Email"
+                  required
                 />
                 <label className="label">Password</label>
                 <div className="relative">
@@ -53,6 +89,7 @@ const Login = () => {
                     name="password"
                     className="input"
                     placeholder="Password"
+                    required
                   />
                   <>
                     {showPass ? (
@@ -81,7 +118,10 @@ const Login = () => {
               </div>
               <div className="divider">OR</div>
               <div className="w-full flex justify-center">
-                <button className="btn w-full bg-base-200 text-black border-[#e5e5e5]">
+                <button
+                  onClick={handleGoogleSignin}
+                  className="btn w-full bg-base-200 text-black border-[#e5e5e5]"
+                >
                   <svg
                     aria-label="Google logo"
                     width="16"
