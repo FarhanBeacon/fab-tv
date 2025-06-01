@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 
 const HomePage = () => {
   const { channelsData, user } = useContext(AuthContext);
+  const name = user?.displayName;
   return (
     <div>
       <Banner />
@@ -15,7 +16,7 @@ const HomePage = () => {
             <h3 className="text-3xl font-semibold">
               Hello!{" "}
               <span className="text-blue-400">
-                {user.displayName?.split(" ")[0]}
+                {name?.split(" ")[0].charAt(0).toUpperCase() + name?.slice(1)}
               </span>
             </h3>
             <p className="text-gray-600">Welcome To Fab TV</p>

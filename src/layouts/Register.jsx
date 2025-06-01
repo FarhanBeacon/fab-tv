@@ -42,7 +42,7 @@ const Register = () => {
         logOutUser();
         swal(
           "Good job!",
-          "User Created Successfully! Verify Your Email to Login",
+          "Now Verify Your Email to Login",
           "success"
         );
         navigate("/login");
