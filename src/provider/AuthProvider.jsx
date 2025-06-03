@@ -20,7 +20,16 @@ const googleProvider = new GoogleAuthProvider();
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [channelsData, setChannelsData] = useState([]);
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState(null);
+
+  // fetching the channels info for building/testing the app
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setChannelsData(data);
+      });
+  }, []);
 
   // Create User with Email & Password
   const createUserWithEmailPass = (email, password) => {
@@ -58,16 +67,6 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  // fetching the channels info for building/testing the app
-  useEffect(() => {
-    fetch("/data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setChannelsData(data);
-        setLoading(false);
-      });
-  }, []);
-
   // On Auth Change
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -75,7 +74,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
     });
     return () => unSubscribe();
-  }, [user]);
+  }, []);
 
   const info = {
     channelsData,

@@ -3,24 +3,28 @@ import { AuthContext } from "../provider/AuthProvider";
 import Banner from "../components/Banner";
 import ChannelUI from "../components/ChannelUI";
 import Navbar from "../components/Navbar";
+// eslint-disable-next-line no-unused-vars
+import { easeInOut, motion } from "framer-motion";
+import Loader from "../components/Loader";
 
 const HomePage = () => {
-  const { channelsData, user } = useContext(AuthContext);
+  const { channelsData, user, loading } = useContext(AuthContext);
   const name = user?.displayName?.split(" ")[0];
   return (
     <div>
       <Banner />
       {user ? (
         <div className="w-full flex justify-between items-center px-4">
-          <div>
+          <motion.div animate={{ x: [-200, 0, 0] }}
+          transition={{ duration: 1, repeat: 0, ease: easeInOut }}>
             <h3 className="text-3xl font-semibold">
               Hello!{" "}
               <span className="text-blue-400">
-                {name?.charAt(0).toUpperCase() + name?.slice(1)}
+                {name?.charAt(0).toUpperCase() + name?.slice(1,7)}
               </span>
             </h3>
             <p className="text-gray-600">Welcome To Fab TV</p>
-          </div>
+          </motion.div>
           <Navbar />
         </div>
       ) : (
@@ -29,7 +33,7 @@ const HomePage = () => {
         </div>
       )}
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-        {channelsData.map((channel, index) => (
+        {loading? <Loader/> : channelsData?.map((channel, index) => (
           <ChannelUI
             key={index}
             name={channel.name}

@@ -95,12 +95,12 @@ const Login = () => {
                     {showPass ? (
                       <FaEyeSlash
                         onClick={() => setShowPass(false)}
-                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-5 md:right-6 top-3 cursor-pointer"
                       />
                     ) : (
                       <FaEye
                         onClick={() => setShowPass(true)}
-                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-5 md:right-6 top-3 cursor-pointer"
                       />
                     )}
                   </>

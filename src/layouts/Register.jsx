@@ -33,6 +33,10 @@ const Register = () => {
       setError([
         "Password must be at least 8 characters long and  one uppercase letter and one digit (number)",
       ]);
+      return;
+    }else if (username.length>8){
+      setError("Username can be a maximum of 8 characters");
+      return;
     }
 
     createUserWithEmailPass(email, password)
@@ -94,12 +98,12 @@ const Register = () => {
                     {showPass ? (
                       <FaEyeSlash
                         onClick={() => setShowPass(false)}
-                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-5 md:right-6 top-3 cursor-pointer"
                       />
                     ) : (
                       <FaEye
                         onClick={() => setShowPass(true)}
-                        className="absolute z-10 text-lg right-6 top-3 cursor-pointer"
+                        className="absolute z-10 text-lg right-5 md:right-6 top-3 cursor-pointer"
                       />
                     )}
                   </>
