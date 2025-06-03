@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
 
   // fetching the channels info for building/testing the app
   useEffect(() => {
-    fetch("https://fab-tv-server-1k9df5gk7-beacons-projects-ecaeab88.vercel.app/channels")
+    fetch("https://fab-tv-server.vercel.app/channels")
       .then((res) => res.json())
       .then((data) => {
         setChannelsData(data);
