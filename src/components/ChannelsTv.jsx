@@ -4,10 +4,10 @@ import { AuthContext } from "../provider/AuthProvider";
 
 const ChannelsTv = () => {
   const { channelsData } = useContext(AuthContext);
-  const chUrl = channelsData.find(
+  const chUrl = channelsData?.find(
     (channel) => channel.name == "Channels Television"
   ).source;
-  const otherChannel = channelsData.filter(
+  const otherChannel = channelsData?.filter(
     (info) => !info.name.includes("Channels Television")
   );
   return (
