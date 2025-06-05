@@ -32,6 +32,7 @@ const Login = () => {
         const user = result.user;
         if (user.emailVerified) {
           setUser(user);
+          swal("Success", "Login Successful", "success");
           navigate("/");
         } else {
           logOutUser();
@@ -51,6 +52,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
+        swal("Success", "Login Successful", "success");
         navigate("/");
       })
       .catch((error) => {

@@ -11,6 +11,8 @@ import {
   updateProfile,
 } from "firebase/auth";
 import app from "../firebase/firebase.init";
+import swal from "sweetalert";
+import Loader from "../components/Loader";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext();
@@ -19,7 +21,7 @@ const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [channelsData, setChannelsData] = useState([]);
+  const [channelsData, setChannelsData] = useState(null);
   const [user, setUser] = useState(null);
 
   // fetching the channels info for building/testing the app
@@ -28,6 +30,7 @@ const AuthProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => {
         setChannelsData(data);
+        setLoading(false);
       });
   }, []);
 
@@ -64,7 +67,16 @@ const AuthProvider = ({ children }) => {
   // Logout user
   const logOutUser = () => {
     setLoading(true);
-    return signOut(auth);
+    return signOut(auth)
+      .then(() => {
+        setUser(null);
+        setLoading(false);
+        swal("Success", "Logout Successful", "success");
+      })
+      .catch((error) => {
+        setLoading(false);
+        swal("Error", error.message, "error");
+      });
   };
 
   // On Auth Change
@@ -75,6 +87,10 @@ const AuthProvider = ({ children }) => {
     });
     return () => unSubscribe();
   }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   const info = {
     channelsData,

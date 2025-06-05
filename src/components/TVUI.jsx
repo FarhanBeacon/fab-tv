@@ -7,7 +7,7 @@ const TVUI = ({ otherChannel, chName, chUrl }) => {
   const videoContainerRef = useRef(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [showButton, setShowButton] = useState(false);
-  const [videoSrc, setVideoSrc] = useState(chUrl); // State to store the autoplay URL
+  const [videoSrc, setVideoSrc] = useState(chUrl);
 
   // Modify video URL to ensure autoplay
   useEffect(() => {
