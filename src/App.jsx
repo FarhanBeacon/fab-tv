@@ -6,9 +6,10 @@ import { AuthContext } from "./provider/AuthProvider";
 import { easeInOut, motion } from "framer-motion";
 import Banner from "./components/Banner";
 import AuthenticationBar from "./components/AuthenticationBar";
+import Loader from "./components/Loader";
 
 function App() {
-  const { user } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
   const name = user?.displayName?.split(" ")[0];
 
   const lists = [
@@ -22,6 +23,10 @@ function App() {
       <NavLink to={"/movies"}>Movies</NavLink>
     </li>,
   ];
+
+  if(loading){
+    return <Loader />
+  }
   return (
     <>
       <header>
