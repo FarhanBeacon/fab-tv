@@ -23,9 +23,9 @@ const EpisodeDetails = () => {
         return <Loader />
     }
 
-    const currentEpisode = seriesData.find(series=> series.seriesId === seriesId && series.episode === episode);
+    const currentEpisode = seriesData?.find(series=> series.seriesId === seriesId && series.episode === episode);
     
-    const otherEpisode = seriesData.filter(series=> series.seriesId === seriesId && series.episode != episode);
+    const otherEpisode = seriesData?.filter(series=> series.seriesId === seriesId && series.episode != episode);
 
     const seriesTitle = currentEpisode?.title +" "+ currentEpisode?.session +" "+ currentEpisode.episode;
 

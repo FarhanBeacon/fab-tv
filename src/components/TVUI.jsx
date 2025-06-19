@@ -12,10 +12,10 @@ const TVUI = ({ type, otherChannel, chName, chUrl }) => {
 
   // Modify video URL to ensure autoplay
   useEffect(() => {
-    if (chUrl.includes("autoplay=1")) {
+    if (chUrl?.includes("autoplay=1")) {
       setVideoSrc(chUrl);
     } else {
-      const autoplayUrl = chUrl.includes("?")
+      const autoplayUrl = chUrl?.includes("?")
         ? `${chUrl}&autoplay=1`
         : `${chUrl}?autoplay=1`;
       setVideoSrc(autoplayUrl);
@@ -92,6 +92,8 @@ const TVUI = ({ type, otherChannel, chName, chUrl }) => {
             {otherChannel?.map((channel, index) => (
               <ChannelUI
                 key={index}
+                type={"LiveTV"}
+                chId={channel._id}
                 name={channel.name}
                 image={channel.image}
                 navLink={channel.navLink}

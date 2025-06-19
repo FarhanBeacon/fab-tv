@@ -14,6 +14,8 @@ const HomePage = () => {
           channelsData?.map((channel, index) => (
             <ChannelUI
               key={index}
+              type={"LiveTV"}
+              chId={channel._id}
               name={channel.name}
               image={channel.image}
               navLink={channel.navLink}

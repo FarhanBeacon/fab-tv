@@ -8,8 +8,8 @@ import Banner from "./components/Banner";
 import AuthenticationBar from "./components/AuthenticationBar";
 
 function App() {
-    const { user } = useContext(AuthContext);
-    const name = user?.displayName?.split(" ")[0];
+  const { user } = useContext(AuthContext);
+  const name = user?.displayName?.split(" ")[0];
 
   const lists = [
     <li key={1}>
@@ -62,13 +62,15 @@ function App() {
                 animate={{ x: [-200, 0, 0] }}
                 transition={{ duration: 1, repeat: 0, ease: easeInOut }}
               >
-                <h3 className="text-lg md:text-3xl text-black font-semibold">
+                <h3 className="md:text-3xl text-black font-semibold">
                   Hello!{" "}
                   <span className="text-blue-400">
                     {name?.charAt(0).toUpperCase() + name?.slice(1, 7)}
                   </span>
                 </h3>
-                <p className="text-gray-600">Welcome To Fab TV</p>
+                <p className="text-xs md:text-base text-gray-600">
+                  Welcome To Fab TV
+                </p>
               </motion.div>
             </div>
             <div className="navbar-center hidden lg:flex">

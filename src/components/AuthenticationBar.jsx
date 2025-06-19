@@ -5,7 +5,6 @@ import { AuthContext } from "../provider/AuthProvider";
 const AuthenticationBar = () => {
   const { user, logOutUser } = useContext(AuthContext);
   return (
-    // className="navbar w-fit bg-base-200 rounded drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] m-2"
     <nav className={`${user? "" : "navbar w-fit bg-base-200 rounded drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] m-2"}`}>
       {user ? (
         <div className="flex justify-center items-center gap-2">

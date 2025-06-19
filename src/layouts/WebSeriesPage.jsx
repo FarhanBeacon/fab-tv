@@ -1,4 +1,3 @@
-// WebSeriesPage.jsx
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
@@ -18,6 +17,8 @@ const WebSeriesPage = () => {
           seriesData?.map((data, index) => (
             <ChannelUI
               key={index}
+              type={"WebSeries"}
+              chId={data._id}
               name={data.title}
               image={data.image}
               navLink={`/seriesDetails/${data.seriesId}`}
