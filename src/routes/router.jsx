@@ -51,7 +51,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/ChannelDetails/:chId",
-    element: <ChannelDetails />,
+    element: (
+      <PrivateRoute>
+        <ChannelDetails />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/episodeDerails/:seriesId/:episode",
