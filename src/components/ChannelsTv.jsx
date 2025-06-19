@@ -20,6 +20,7 @@ const ChannelsTv = () => {
   return (
     <div>
       <TVUI
+        type={"LiveTV"}
         otherChannel={otherChannel}
         chName={"Channels Television"}
         chUrl={chUrl}

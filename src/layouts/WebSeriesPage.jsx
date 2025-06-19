@@ -1,22 +1,26 @@
+// WebSeriesPage.jsx
 import React, { useContext } from "react";
+import { useLoaderData } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import ChannelUI from "../components/ChannelUI";
 import Loader from "../components/Loader";
 
-const HomePage = () => {
-  const { channelsData, loading } = useContext(AuthContext);
+const WebSeriesPage = () => {
+  const { seriesData } = useLoaderData();
+  const { loading } = useContext(AuthContext);
+
   return (
     <div>
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {loading ? (
           <Loader />
         ) : (
-          channelsData?.map((channel, index) => (
+          seriesData?.map((data, index) => (
             <ChannelUI
               key={index}
-              name={channel.name}
-              image={channel.image}
-              navLink={channel.navLink}
+              name={data.title}
+              image={data.image}
+              navLink={`/seriesDetails/${data.seriesId}`}
             />
           ))
         )}
@@ -25,4 +29,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default WebSeriesPage;

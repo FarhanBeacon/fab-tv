@@ -5,3 +5,7 @@
 @theme {
     --font-rancho: "Rancho", cursive;
 }
+
+.active {
+    border: oklch(70.7% 0.165 254.624) 2px solid;
+}

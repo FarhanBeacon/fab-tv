@@ -2,8 +2,9 @@ import { useRef, useState, useEffect } from "react";
 import ChannelUI from "./ChannelUI";
 import { IoHomeOutline } from "react-icons/io5";
 import { Link } from "react-router";
+import EpisodeIcon from "./EpisodeIcon";
 
-const TVUI = ({ otherChannel, chName, chUrl }) => {
+const TVUI = ({ type, otherChannel, chName, chUrl }) => {
   const videoContainerRef = useRef(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -84,28 +85,56 @@ const TVUI = ({ otherChannel, chName, chUrl }) => {
       </div>
 
       {/* Other Channels Section */}
-      <div className="relative my-2 md:my-4 p-2 md:p-4">
-        <h3 className="text-lg md:text-xl font-semibold">Other Channels</h3>
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
-          {otherChannel?.map((channel, index) => (
-            <ChannelUI
-              key={index}
-              name={channel.name}
-              image={channel.image}
-              navLink={channel.navLink}
-            />
-          ))}
-        </div>
+      {type === "LiveTV" && (
+        <div className="relative my-2 md:my-4 p-2 md:p-4">
+          <h3 className="text-lg md:text-xl font-semibold">Other Channels</h3>
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+            {otherChannel?.map((channel, index) => (
+              <ChannelUI
+                key={index}
+                name={channel.name}
+                image={channel.image}
+                navLink={channel.navLink}
+              />
+            ))}
+          </div>
 
-        {/* Floating Home Button Inside Other Channels Section */}
-        <div className="sticky bottom-4 flex justify-end p-4">
-          <Link to={"/"}>
-            <button className="w-12 h-12 flex justify-center items-center text-2xl font-bold text-white bg-black border rounded-full transition transform hover:bg-gray-800 active:scale-90">
-              <IoHomeOutline />
-            </button>
-          </Link>
+          {/* Floating Home Button Inside Other Channels Section */}
+          <div className="sticky bottom-4 flex justify-end p-4">
+            <Link to={"/"}>
+              <button className="w-12 h-12 flex justify-center items-center text-2xl font-bold text-white bg-black border rounded-full transition transform hover:bg-gray-800 active:scale-90">
+                <IoHomeOutline />
+              </button>
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
+      {type === "WebSeries" && (
+        <div className="relative my-2 md:my-4 p-2 md:p-4">
+          <h3 className="text-lg md:text-xl font-semibold">Other Channels</h3>
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+            {otherChannel?.map((channel, index) => (
+              <EpisodeIcon
+                key={index}
+                seriesId={channel.seriesId}
+                episode={channel.episode}
+                image={channel.image}
+                title={channel.title}
+                session={channel.session}
+              />
+            ))}
+          </div>
+
+          {/* Floating Home Button Inside Other Channels Section */}
+          <div className="sticky bottom-4 flex justify-end p-4">
+            <Link to={"/"}>
+              <button className="w-12 h-12 flex justify-center items-center text-2xl font-bold text-white bg-black border rounded-full transition transform hover:bg-gray-800 active:scale-90">
+                <IoHomeOutline />
+              </button>
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

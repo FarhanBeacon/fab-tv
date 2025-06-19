@@ -1,12 +1,9 @@
-import { useContext } from "react";
 import { Link } from "react-router";
-import { AuthContext } from "../provider/AuthProvider";
 
 const ChannelUI = ({ name, image, navLink }) => {
-  const { user } = useContext(AuthContext);
   return (
     <div className="border rounded-lg p-2 shadow-md transition duration-300  active:scale-85 cursor-pointer">
-      <Link to={user? navLink : "/login"}>
+      <Link to={navLink}>
         <img
           src={image}
           alt={name}

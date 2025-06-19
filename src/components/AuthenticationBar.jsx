@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 
-const Navbar = () => {
+const AuthenticationBar = () => {
   const { user, logOutUser } = useContext(AuthContext);
   return (
-    <nav className="navbar w-fit bg-base-200 rounded drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] m-2">
+    // className="navbar w-fit bg-base-200 rounded drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] m-2"
+    <nav className={`${user? "" : "navbar w-fit bg-base-200 rounded drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] m-2"}`}>
       {user ? (
         <div className="flex justify-center items-center gap-2">
           <div
@@ -53,4 +54,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default AuthenticationBar;

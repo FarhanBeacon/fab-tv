@@ -28,6 +28,10 @@ import Wion from "../tv/Wion.jsx";
 import Cgtn from "../tv/Cgtn.jsx";
 import Register from "../layouts/Register.jsx";
 import Login from "../layouts/Login.jsx";
+import PrivateRoute from "./PrivateRoute.jsx";
+import WebSeriesPage from "../layouts/WebSeriesPage.jsx";
+import SeriesDetails from "../components/SeriesDetails.jsx";
+import EpisodeDetails from "../components/EpisodeDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,98 +47,212 @@ const router = createBrowserRouter([
         element: <ChannelsTv />,
       },
       {
+        path: "/webSeries",
+        element: <PrivateRoute><WebSeriesPage /></PrivateRoute>,
+        loader: async () => {
+          const res = await fetch("https://fab-tv-server.vercel.app/webseries");
+          const seriesData = await res.json();
+          return { seriesData };
+        },
+      },
+      {
+        path: "/seriesDetails/:seriesId",
+        element: <PrivateRoute><SeriesDetails /></PrivateRoute>,
+        loader: async ({params}) => {
+          const res = await fetch(`https://fab-tv-server.vercel.app/episodes/${params.seriesId}`);
+          const episodesData = await res.json();
+          return { episodesData };
+        },
+      },
+      {
         path: "/jamuna",
-        element: <Jamuna />,
+        element: (
+          <PrivateRoute>
+            <Jamuna />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/somoy",
-        element: <Somoy />,
+        element: (
+          <PrivateRoute>
+            <Somoy />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/ekhon",
-        element: <Ekhon />,
+        element: (
+          <PrivateRoute>
+            <Ekhon />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/rtv",
-        element: <Rtv />,
+        element: (
+          <PrivateRoute>
+            <Rtv />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/independent",
-        element: <Independent />,
+        element: (
+          <PrivateRoute>
+            <Independent />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/atn",
-        element: <AtnNews />,
+        element: (
+          <PrivateRoute>
+            <AtnNews />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/channeli",
-        element: <Channeli />,
+        element: (
+          <PrivateRoute>
+            <Channeli />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/channel24",
-        element: <Channel24 />,
+        element: (
+          <PrivateRoute>
+            <Channel24 />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/ekattor",
-        element: <Ekattor />,
+        element: (
+          <PrivateRoute>
+            <Ekattor />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/ntv",
-        element: <NTV />,
+        element: (
+          <PrivateRoute>
+            <NTV />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/alJazeera",
-        element: <AlJazeera />,
+        element: (
+          <PrivateRoute>
+            <AlJazeera />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/france24",
-        element: <France24 />,
+        element: (
+          <PrivateRoute>
+            <France24 />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/wion",
-        element: <Wion />,
+        element: (
+          <PrivateRoute>
+            <Wion />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/dwNews",
-        element: <DWNews />,
+        element: (
+          <PrivateRoute>
+            <DWNews />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/cgtn",
-        element: <Cgtn />,
+        element: (
+          <PrivateRoute>
+            <Cgtn />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/abcNews",
-        element: <ABCNews />,
+        element: (
+          <PrivateRoute>
+            <ABCNews />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/natGeo",
-        element: <NatGeo />,
+        element: (
+          <PrivateRoute>
+            <NatGeo />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/discoveryRex",
-        element: <DiscoveryRex />,
+        element: (
+          <PrivateRoute>
+            <DiscoveryRex />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/deshTv",
-        element: <DeshTv />,
+        element: (
+          <PrivateRoute>
+            <DeshTv />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/news24",
-        element: <News24 />,
+        element: (
+          <PrivateRoute>
+            <News24 />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/dbcNews",
-        element: <DbcNews />,
+        element: (
+          <PrivateRoute>
+            <DbcNews />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/disneyXD",
-        element: <DisneyXD />,
+        element: (
+          <PrivateRoute>
+            <DisneyXD />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/cN",
-        element: <CN />,
+        element: (
+          <PrivateRoute>
+            <CN />
+          </PrivateRoute>
+        ),
       },
     ],
+  },
+  {
+    path: "/episodeDerails/:seriesId/:episode",
+    element: <PrivateRoute><EpisodeDetails /></PrivateRoute>,
   },
   {
     path: "/login",
