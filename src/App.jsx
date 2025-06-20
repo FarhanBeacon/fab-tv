@@ -24,8 +24,8 @@ function App() {
     </li>,
   ];
 
-  if(loading){
-    return <Loader />
+  if (loading) {
+    return <Loader />;
   }
   return (
     <>
@@ -67,7 +67,7 @@ function App() {
                 animate={{ x: [-200, 0, 0] }}
                 transition={{ duration: 1, repeat: 0, ease: easeInOut }}
               >
-                <h3 className="md:text-3xl text-black font-semibold">
+                <h3 className="md:text-3xl text-shadow-neutral-content font-semibold">
                   Hello!{" "}
                   <span className="text-blue-400">
                     {name?.charAt(0).toUpperCase() + name?.slice(1, 7)}

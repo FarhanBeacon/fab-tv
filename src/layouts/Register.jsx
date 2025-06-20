@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import { Link, useNavigate } from "react-router";
+import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../provider/AuthProvider";
 import swal from "sweetalert";
 
@@ -13,7 +14,9 @@ const Register = () => {
   const [showPass, setShowPass] = useState(false);
   const {
     createUserWithEmailPass,
+    createGoogleUser,
     setLoading,
+    setUser,
     updateUserInfo,
     verifyEmail,
     logOutUser,
@@ -34,7 +37,7 @@ const Register = () => {
         "Password must be at least 8 characters long and  one uppercase letter and one digit (number)",
       ]);
       return;
-    }else if (username.length>8){
+    } else if (username.length > 8) {
       setError("Username can be a maximum of 8 characters");
       return;
     }
@@ -44,12 +47,24 @@ const Register = () => {
         updateUserInfo(username);
         verifyEmail();
         logOutUser();
-        swal(
-          "Good job!",
-          "Now Verify Your Email to Login",
-          "success"
-        );
+        swal("Good job!", "Now Verify Your Email to Login", "success");
         navigate("/login");
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  const handleGoogleSignin = () => {
+    createGoogleUser()
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        swal("Success", "Login Successful", "success");
+        navigate("/");
       })
       .catch((error) => {
         setError(error.message);
@@ -118,6 +133,16 @@ const Register = () => {
                     Login
                   </Link>
                 </p>
+              </div>
+              <div className="divider">OR</div>
+              <div className="w-full flex justify-center">
+                <button
+                  onClick={handleGoogleSignin}
+                  className="btn btn-ghost w-full bg-base-200 border-[#e5e5e5]"
+                >
+                  <FcGoogle />
+                  SignUp with Google
+                </button>
               </div>
             </div>
           </div>
