@@ -28,7 +28,7 @@ const WebSeriesPage = () => {
         )}
       </div>
       {/* Floating Home Button */}
-      <div className="sticky bottom-4 flex justify-end p-4">
+      <div className="sticky bottom-0 flex justify-end p-4">
         <Link to={"/"}>
           <button className="w-12 h-12 flex justify-center items-center text-2xl font-bold text-white bg-black border rounded-full transition transform hover:bg-gray-800 active:scale-90">
             <IoHomeOutline />
