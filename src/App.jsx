@@ -28,7 +28,7 @@ function App() {
     return <Loader />;
   }
   return (
-    <>
+    <div>
       <header>
         <Banner />
         {user ? (
@@ -91,13 +91,13 @@ function App() {
           </div>
         )}
       </header>
-      <main className="min-h-screen bg-neutral">
+      <main className="min-h-screen">
         <Outlet />
       </main>
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 }
 
