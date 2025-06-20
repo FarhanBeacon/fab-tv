@@ -18,7 +18,7 @@ const ChannelUI = ({ type, chId, name, image, navLink }) => {
         <img
           src={image}
           alt={name}
-          className="w-full h-fit object-cover rounded-md"
+          className="w-full h-full object-cover rounded-md border-2 hover:border-blue-400"
         />
         <h3 className="text-xs md:text-lg font-semibold mt-2">{name}</h3>
       </Link>

@@ -10,7 +10,7 @@ const WebSeriesPage = () => {
   const { loading } = useContext(AuthContext);
 
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {loading ? (
           <Loader />

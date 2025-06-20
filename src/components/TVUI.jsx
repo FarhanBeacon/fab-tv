@@ -113,8 +113,8 @@ const TVUI = ({ type, otherChannel, chName, chUrl }) => {
       )}
       {type === "WebSeries" && (
         <div className="relative my-2 md:my-4 p-2 md:p-4">
-          <h3 className="text-lg md:text-xl font-semibold">Other Channels</h3>
-          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+          <h3 className="text-lg md:text-xl font-rancho font-semibold mb-2">Other Episodes</h3>
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-4 gap-2 md:gap-4">
             {otherChannel?.map((channel, index) => (
               <EpisodeIcon
                 key={index}

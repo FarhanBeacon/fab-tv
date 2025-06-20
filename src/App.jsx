@@ -91,7 +91,7 @@ function App() {
           </div>
         )}
       </header>
-      <main className="min-h-screen bg-gray-100">
+      <main className="min-h-screen bg-neutral">
         <Outlet />
       </main>
       <footer>
