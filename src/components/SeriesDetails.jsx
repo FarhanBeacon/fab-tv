@@ -13,10 +13,11 @@ const SeriesDetails = () => {
           <EpisodeIcon
             key={index}
             seriesId={episode.seriesId}
-            episode={episode?.episode}
+            episode={episode.episode}
+            episodeId={episode._id}
             image={episode.image}
             title={episode.title}
-            session={episode?.session}
+            session={episode.session}
           />
         ))}
       </div>
