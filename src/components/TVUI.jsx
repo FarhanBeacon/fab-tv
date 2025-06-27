@@ -119,10 +119,10 @@ const TVUI = ({ type, otherChannel, chName, chUrl }) => {
               <EpisodeIcon
                 key={index}
                 seriesId={channel.seriesId}
-                episode={channel.episode}
+                episode={channel?.episode}
                 image={channel.image}
                 title={channel.title}
-                session={channel.session}
+                session={channel?.session}
               />
             ))}
           </div>

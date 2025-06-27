@@ -14,9 +14,9 @@ const EpisodeIcon = ({seriesId, title,session, episode, image}) => {
                   className="w-full h-fit object-cover rounded-md"
                 />
                 <div>
-                    <span className="absolute top-6 right-1 bg-white text-black text-xs font-semibold px-2 py-1 rounded">
+                    {episode.length > 0 ? <span className="absolute top-6 right-1 bg-white text-black text-xs font-semibold px-2 py-1 rounded">
                         {episode}
-                    </span>
+                    </span> : ""}
                 </div>
               </div>
               <h3 className="text-xs md:text-lg font-semibold mt-2">
